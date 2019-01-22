@@ -1,6 +1,72 @@
 body{
     float: left;
 }
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+h2, h1{
+    text-align: center;
+}
+@media screen and (min-width: 1000px) {
+    div.computer{
+        font-size: 1.5vw;
+        padding: 50px;
+        border: 1px solid black;
+        background: hsl(50, 50, 50);
+        border-radius: 10%;
+    }
+}
+@media screen and (max-width: 400px) {
+    picture{
+        display: none;
+    }
+}
+li a:hover{
+    background-color: #000000;
+}
+li a:active{
+    background-color: #b1b1b1;
+}
+ul, li {
+    list-style-type: none;
+    text-align: left;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #606060;
+}
+li {
+    font-size: 100%;
+    margin: 1%;
+    float: left;
+}
+li a {
+    display: block;
+    color: rgb(200, 200, 200);
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+}
+.active {
+    background-color: rgb(150, 150, 150);
+}
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 table{
     font-family: 'Times New Roman', Times, serif;
     border-collapse: collapse;
@@ -13,8 +79,4 @@ td, th{
 }
 tr:nth-child(even){
     background-color: #dddddd;
-}
-.köttbulle{
-    border: 1px solid black;
-    border-radius: 7px;
 }
