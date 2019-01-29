@@ -1,0 +1,130 @@
+body{
+    float: left;
+}
+nav{
+    width: 100%;
+    height: 80px;
+    background-color: rgba(200, 200, 200, 0.6);
+}
+header{
+    position: relative;
+}
+header h1{ 
+    position: absolute;
+    left: 0%;
+    top: 10%;
+    margin: auto;
+    text-align: center;
+    color: hsla(0, 100%, 50%, 0.5);
+    width: 100%;
+}
+footer{
+    position: relative;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+h2{
+    text-align: center;
+}
+@media screen and (min-width: 1000px) {
+    div.computer{
+        font-size: 1vw;
+        padding: 50px;
+        border: 1px solid black;
+        background: hsl(50, 50, 50);
+        border-radius: 10%;
+    }
+}
+@media screen and (max-width: 300px) {
+    picture{
+        display: none;
+    }
+}
+a{
+    display: block;
+    width: 100%;
+}
+li a:hover{
+    background-color: #a1a1a1;
+}
+li a:active{
+    background-color: #b1b1b1;
+}
+ul, li {
+    list-style-type: none;
+    text-align: left;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #606060;
+}
+li {
+    font-size: 100%;
+    margin: 1%;
+    float: left;
+    border-bottom: 1px solid black;
+}
+li a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+}
+li a#Statistik{
+    padding: 10px 6px;
+}
+.active {
+    background-color: rgb(150, 150, 150);
+}
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    width: 90%;
+    z-index: 10;
+    background-color: rgba(200, 200, 200, 0.6);
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+table{
+    font-family: 'Times New Roman', Times, serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+td, th{
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+tr:nth-child(even){
+    background-color: #dddddd;
+}
+#Statistik{
+    float: left;
+}
+@keyframes fyrkant{
+    from{
+        background-color: blue;
+    }
+    to{
+        background-color: red;
+    }
+}
+/* div {
+    width: 100px;
+    height: 100px;
+    background-color: purple;
+    animation-name: fyrkant;
+    animation-duration: 3s;
+    animation-iteration-count: infinite; 
+} */
+
