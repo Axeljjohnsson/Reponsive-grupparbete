@@ -9,13 +9,14 @@
 </head>
 <body>
     <header>
-        <picture>
-            <source media="(min-width: 1400)" srcset="https://picsum.photos/1332/76.44">
-            <source media="(min-width: 800)" srcset="https://picsum.photos/796/76.44">
-            <source media="(min-width: 400)" srcset="https://picsum.photos/359/76.44">
-            <img src="#" alt="Övere bild">
-        </picture>
         <h1>Responsiv Sida</h1>
+        <picture>
+            <source media="(max-width: 600)" srcset="https://picsum.photos/900/180">
+            <source media="(max-width: 1420)" srcset="https://picsum.photos/1440/138.44">
+            <source media="(max-width: 1920)" srcset="https://picsum.photos/1940/138.44">
+            <source srcset="https://picsum.photos/3400/180">
+            <img id="header" src="https://picsum.photos/1940/138.44" alt="Header bild">
+        </picture>
     </header>
     <nav>
         <ul>
@@ -25,15 +26,12 @@
                 <div class="dropdown-content">
                     <ul>
                         <li><a href="Fakta.html">Fakta</a></li>
-                        <li><a href="#">Statistik</a></li>
+                        <li><a href="Statistik.html" id="Statistik">Statistik</a></li>
                     </ul>
                 </div>
             </li>
         </ul>
     </nav>
-    <br>
-    <br>
-    <br>
     <br>
     <main>
         <h2>Lorem ipsum</h2>
@@ -58,5 +56,25 @@
             <img src="https://i.pinimg.com/736x/60/25/bd/6025bd5a6cdbb23caeeb46dae9f66a41--volcano-beautiful-places.jpg" alt="Bild">
         </picture>
     </main>
+    <article>
+            <div class="pulse-loader"></div>
+            <div class="loader"></div>
+    </article>
+    <footer>
+        <ul>
+            <li><a href="https://picsum.photos/1940/138.44">Header image</a></li>
+            <li><a href="https://picsum.photos/1440/138.44">Header and Footer image</a></li>
+            <li><a href="https://picsum.photos/1940/140.44">Footer image</a></li>
+            <li><a href="https://i.pinimg.com/736x/60/25/bd/6025bd5a6cdbb23caeeb46dae9f66a41--volcano-beautiful-places.jpg">Page image 1</a></li>
+            <li><a href="https://66.media.tumblr.com/ed9f8836bcf451d506bce3a3dfec749b/tumblr_pghce8QdcA1x1bfwyo1_400.jpg">Page image 2</a></li>
+            <li><a href="https://i.pinimg.com/originals/55/ce/f3/55cef3f780c050918d3b308d1899abd4.jpg">Page image 3</a></li>
+        </ul>
+        <picture>
+            <source media="(min-width: 1400)" srcset="https://picsum.photos/1940/140.44">
+            <source media="(min-width: 1000)" srcset="https://picsum.photos/1440/138.44">
+            <source srcset="https://picsum.photos/1940/140.44">
+            <img src="https://picsum.photos/1940/140.44" alt="Footer bild">
+        </picture>
+    </footer>
 </body>
 </html>
