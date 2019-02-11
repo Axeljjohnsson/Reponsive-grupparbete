@@ -79,6 +79,14 @@ li a {
 li a#Statistik{
     padding: 10px 6px;
 }
+@media screen and (min-width: 1000px) {
+    div.computer{
+        font-size: 1vw;
+        padding: 50px;
+        border: 1px solid black;
+        border-radius: 10%;
+    }
+}
 .active {
     background-color: rgb(150, 150, 150);
 }
